@@ -55,6 +55,8 @@ border-radius: 30px;
 .searchicon , .mid2345, .right2, .right23 svg{
   visibility:hidden;
   }
+
+
 .rcontent{
   width: 20%;
 }
@@ -468,6 +470,9 @@ transform: scale(1.1);
     width: 100%;
     height: 34vh;
   }
+  .searchicon , .mid2345, .right2, .right23 svg{
+  visibility:visible;
+  }
   .burger{
     position: absolute;
     left: 2vh;
@@ -506,12 +511,16 @@ transform: scale(1.1);
     width: 100%;
     height: 50vh;
 }
-  
+  .searchicon , .mid2345, .right2, .right23 svg{
+  visibility:visible;
+  }
 }
 @media screen and (max-width:304px) {
   #section1{
     width: 100%;
     height: 50vh;
 }
-  
+  .searchicon , .mid2345, .right2, .right23 svg{
+  visibility:visible;
+  }
 }
