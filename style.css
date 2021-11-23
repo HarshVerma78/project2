@@ -346,7 +346,9 @@ transform: scale(1.1);
   .posters{
     width: 100%;
   }
-
+  .searchicon , .mid234, .righ2,right23{
+  visibility:hidden;
+  }
   .categories{
     flex-direction: column;
   }
