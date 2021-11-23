@@ -29,7 +29,10 @@
             background-color: #ffffff;
             height: 6vh;
         }
-       
+       .modal-body{
+         display: flex;
+         flex-direction: column;
+       }
         .left{
             display: flex;
             flex-direction: row;
@@ -46,6 +49,7 @@
             height: 7vh;
             width: 60%;
         }
+     
         
         .right{
             display: flex;
@@ -83,10 +87,21 @@
         .right1{
             color: azure;
         }
+        .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
         .search{
           border: 1px solid black;
           height: 4vh;
-          width: 100%;
+          width: 102%;
           border-radius: 20px;
         }
         .right svg{
@@ -108,7 +123,7 @@
           height: 40vh;
         }
         .second img{
-          border-radius: 100%;
+          border-radius: 102%;
           padding: 1vh;
           border: 2px solid black;
         }
@@ -172,6 +187,9 @@ border-radius: 15px;
           left: 47%;
           top: 107vh;
           border-radius: 20px;
+}
+.user:hover{
+cursor: pointer;
 }
 .posters{
   display: flex;
@@ -279,7 +297,15 @@ background-color: green;
   top: 380vh;
   left: 40%;
 }
+.popover{
 
+position: absolute;
+left: 80%;
+
+top:-4vh;
+visibility: hidden; background-color: white; width: 70%vw; padding: 2vh;
+
+}
 .brands{
   position: relative;
   top: 100vh;
@@ -303,7 +329,7 @@ background-color: green;
     position: sticky;
     top: 0;
     z-index: 1;
-    width: 100%;
+    width: 102%;
     background-color: red;
     height: 8vh;
     border-radius: 0;
@@ -389,20 +415,28 @@ position: absolute;
 
 @media screen and (max-width:400px) {
   .coupon{
-    width: 100%;
+    width: 102%;
   }
   .navbar{
     position: sticky;
     top: 0;
     z-index: 1;
     margin-top: -17vh;
-    width: 100%;
+    width: 102%;
     background-color: red;
     height: 8vh;
-    width: 100%;
+    width: 102%;
     border-radius: 0;
   }
+  .popover{
 
+position: absolute;
+left: 60%;
+
+top: 10vh;
+visibility: hidden; background-color: white; width: 70%vw; padding: 2vh;
+
+}
   .left li{
     width: 0;
   }
@@ -422,7 +456,7 @@ left: 3%;
   }
   .car{
   
-    width: 100%;
+    width: 102%;
   }
   .mid23 {
     width: 25%;
@@ -461,7 +495,6 @@ left: 3%;
     width: 38%;
   }
   .categories{
-    width: 100%;
     top: 100vh;
     flex-direction: column;
   }
@@ -511,6 +544,9 @@ position: absolute;
 .cards2{
     top:95vh ;
 }
+.account{
+  visibility: hidden;
+}
 .brands{
   flex-direction: column;
 }
@@ -520,13 +556,60 @@ position: absolute;
 .abc{
   visibility: visible;
 }
+
 }
     </style>
   </head>
   <body>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header ">
+            <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center" >
+            <input type="email" style="border-radius: 30px;margin: 1vh; padding: 1vh;" placeholder="email">
+            <input type="password" style="border-radius: 30px;margin: 1vh; padding: 1vh;" placeholder="password">
+          </div>
+          <div class="modal-footer">
+            <span class="user dont"data-bs-toggle="modal" data-bs-target="#exampleModal">Don't have account ? </span>
+            <button type="button" class="btn btn-warning" style="border-radius: 20px;">login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" style="border-radius: 30px;margin: 1vh; padding: 1vh;" placeholder="First Name">
+        <input type="text" style="border-radius: 30px;margin: 1vh; padding: 1vh;" placeholder="Last Name">
+        <input type="email" style="border-radius: 30px;margin: 1vh; padding: 1vh;" placeholder="email">
+        <input type="password" style="border-radius: 30px;margin: 1vh; padding: 1vh;" placeholder="password">
+      </div>
+      <div class="modal-footer">
+        <span class="already user" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Already Have an account ?</span>
+        <button type="button" class="btn btn-success" style="border-radius: 20px;">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <div class="coupon text-center">
-         <h6 class="py-2">Wishlist</h6>
+         <h6 class="py-2">Wishlist <span class="mx-3">USD</span> <span class="account user" data-bs-toggle="modal" data-bs-target="#exampleModal">Account <i class="arrow down"></i></span></h6>
+         
     </div>
 
 
@@ -568,9 +651,9 @@ position: absolute;
               &nbsp;&nbsp;&nbsp;info@gmail.com
 
         </div>
-        <div class="mid1"><img src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/demo-shop-logo-1544080375_jpg_large.png?v=1573884133" alt="Callisters Sectioned Shopify Theme" itemprop="logo" style="max-width: 100%;width: 262px;"></div>
+        <div class="mid1"><img src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/demo-shop-logo-1544080375_jpg_large.png?v=1573884133" alt="Callisters Sectioned Shopify Theme" itemprop="logo" style="max-width: 102%;width: 262px;"></div>
         <div class="right1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+            <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                 <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
               </svg>&nbsp;&nbsp;
@@ -622,15 +705,16 @@ position: absolute;
                 <svg class="abc" style="position:absolute; left:20%; color:white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
-                <svg class="abc" style="position:absolute; right:8vh; color:white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                
+               <svg class="abc user" data-bs-toggle="modal" data-bs-target="#staticBackdrop" xmlns="http://www.w3.org/2000/svg" style="position:absolute; right:10vh; color:white"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                 </svg>
-                <svg class="abc" style="position:absolute; right:3vh; color:white"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                <div class="popover" > Your Cart has 0 items</div>
+                <svg class="abc cart" style="position:absolute; right:3vh; color:white"  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
                   <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
                   <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
                 </svg>
-                <div class="mid23"><img src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/demo-shop-logo-1544080375_jpg_large.png?v=1573884133" alt="Callisters Sectioned Shopify Theme" itemprop="logo" style="max-width: 100%;width: 262px;"></div>
+                <div class="mid23"><img src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/demo-shop-logo-1544080375_jpg_large.png?v=1573884133" alt="Callisters Sectioned Shopify Theme" itemprop="logo" style="max-width: 102%;width: 262px;"></div>
             <div class="right">
                <input type="search" class="px-3 search" placeholder="search">
                <svg class="py-2 px-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -865,9 +949,9 @@ position: absolute;
   <script>
 
     if (window.innerWidth <= 400) {
-      $(".posterImage").attr("width",window.innerWidht);
+      $(".posterImage").attr("width",window.innerWidth);
+    
       $(".carImage").attr("height","300");
-
     }
     $(".card").hover(()=>{
       $(".elements").css("visibility", "visible");
@@ -878,6 +962,22 @@ position: absolute;
   }, function(){
   $(".elements").css("visibility", "hidden");
 });
+
+$(".cart").hover(function(){
+  $(".popover").css("visibility","visible")
+},function()
+  {
+    $(".popover").css("visibility","hidden")
+  }
+  
+);
+
+
+
+
+
+
+
 
  
   </script>
