@@ -52,6 +52,9 @@ border-radius: 30px;
   height: 100%;
   
 }
+  .searchicon , .mid234, .righ2,right23{
+  visibility:hidden;
+  }
 .rcontent{
   width: 20%;
 }
@@ -346,9 +349,7 @@ transform: scale(1.1);
   .posters{
     width: 100%;
   }
-  .searchicon , .mid234, .righ2,right23{
-  visibility:hidden;
-  }
+
   .categories{
     flex-direction: column;
   }
