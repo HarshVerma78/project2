@@ -17,6 +17,7 @@
         .coupon{
             background-color: rgb(255, 219, 15);
             height: 5vh;
+           
         }
         .navbar{
           position: sticky;
@@ -387,8 +388,10 @@ position: absolute;
 }
 
 @media screen and (max-width:350px) {
+  .coupon{
+    width: 110%;
+  }
   .navbar{
-    max-width: 350px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -396,7 +399,15 @@ position: absolute;
     width: 100%;
     background-color: red;
     height: 8vh;
+    width: 110%;
     border-radius: 0;
+  }
+
+  .left li{
+    width: 0;
+  }
+  .right{
+    width: 0;
   }
   .row{
     visibility: hidden;
@@ -406,7 +417,12 @@ position: absolute;
  position: absolute;
  top: 5vh;
 left: 3%;
+
     visibility: visible;
+  }
+  .car{
+  
+    width: 110%;
   }
   .mid23 {
     width: 25%;
@@ -419,7 +435,6 @@ left: 3%;
     visibility: hidden;
   }
   .mid1{
-    max-width: 350px;
     width: 50%;
     padding-left: 5%;
   }
@@ -439,7 +454,6 @@ left: 3%;
     visibility: visible;
   }
   .posters{
-    max-width: 350px;
     top: -35vh;
     flex-direction: column;
   }
@@ -456,7 +470,6 @@ left: 3%;
     left: 15%;
   }
   .container2{
-    max-width: 350px;
     flex-direction: column;
     top: 60vh;
     left: 0vh;
@@ -466,16 +479,13 @@ left: 3%;
 top: -45vh;
   }
   .cards{
-    max-width: 350px;
     top:190vh ;
   }
   .second{
-    max-width: 350px;
     margin: auto;
     width: 55%;
   }
   .buttons{
-    max-width: 350px;
     top: 185vh;
   }
   .buttons button{
@@ -498,7 +508,6 @@ top:180vh;
 position: absolute;
 }
 .cards2{
-  max-width: 270px;
     top:95vh ;
 }
 .brands{
@@ -630,11 +639,13 @@ position: absolute;
             <div class="right-after"></div>
         </div>
      </div>
+     <section>
     <div class="container2  container">
       <div class="second text-center one"><img class="shadow-lg lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/2_df459367-9509-4390-9201-3f2260611035.png?v=1573290242" alt="service Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/2_df459367-9509-4390-9201-3f2260611035.png?v=1573290242"><p class="my-3">World Wide Delivery</p><p>Lorem ipsum dolor sit amet.</p></div>
       <div class="second text-center two"><img class="shadow-lg lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/4.png?v=1573290246" alt="service Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/4.png?v=1573290246"><p class="my-3">Secure Payment</p><p>Lorem ipsum dolor sit amet.</p></div>
       <div class="second text-center three"><img class=" lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/5.png?v=1573290254" alt="service Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/5.png?v=1573290254"><p class="my-3">Gift Voucher</p><p>Lorem ipsum dolor sit amet.</p></div>
     </div>
+  </section>
     <h1 class="trending">
       Trending Products
       <div class="seprator-img" style="background: url('//cdn.shopify.com/s/files/1/0271/9288/5345/files/border.png?v=1580202496');"></div>
@@ -735,13 +746,13 @@ position: absolute;
   <button class="btn btn-warning my-3 view">view all</button>
 
   <div class="posters">
-    <div class="p1 p11"><img class="posterImage" width="505" class="ls-is-cached lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-1-640x450.png?v=1634648066" alt="Banner Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-1-640x450.png?v=1634648066"></div>
-    <div class="p1 p12"><img class="posterImage" width="505" class="ls-is-cached lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-2-640x450.png?v=1634648073" alt="Banner Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-2-640x450.png?v=1634648073"></div>
-    <div class="p1 p13"><img class="posterImage" width="505" class="ls-is-cached lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-3-640x450.png?v=1634648073" alt="Banner Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-3-640x450.png?v=1634648073"></div>
+    <div class="p1 p11"><img class="posterImage" width="320" class="ls-is-cached lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-1-640x450.png?v=1634648066" alt="Banner Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-1-640x450.png?v=1634648066"></div>
+    <div class="p1 p12"><img class="posterImage" width="320" class="ls-is-cached lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-2-640x450.png?v=1634648073" alt="Banner Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-2-640x450.png?v=1634648073"></div>
+    <div class="p1 p13"><img class="posterImage" width="320" class="ls-is-cached lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-3-640x450.png?v=1634648073" alt="Banner Image" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/banner-3-640x450.png?v=1634648073"></div>
 
   </div>
 
-
+<section>
   <div class="categories">
 <div class="cat cat1 text-center">
   <div class="bubble rounded-circle"><img class=" lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/1_d040ee45-3f0d-4cfd-aa47-d61d562af21a.png?v=1573446386" alt="Icon" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/1_d040ee45-3f0d-4cfd-aa47-d61d562af21a.png?v=1573446386"></div><h2 class="text-center  text-danger">Santa Hat</h2><br>Lorem ipsum dolor sit<br>elit. Quos, recusandae!
@@ -757,7 +768,7 @@ position: absolute;
   <div class="bubble rounded-circle"><img class=" lazyloaded" data-src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/4_a9cefb46-75d0-40ba-b081-f2c522a5f96c.png?v=1573446391" alt="Icon" src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/4_a9cefb46-75d0-40ba-b081-f2c522a5f96c.png?v=1573446391"></div><h2 class="text-center  text-danger">Gift Card</h2><br>Lorem ipsum dolor sit<br>elit. Quos, recusandae!
 </div>
   </div>
-
+</section>
   <h1 class="special">
     Special Products
     <div class="seprator-img" style="background: url('//cdn.shopify.com/s/files/1/0271/9288/5345/files/border.png?v=1580202496');"></div>
@@ -852,8 +863,7 @@ position: absolute;
 
   <script>
 
-    if (window.innerWidth <= 400) {
-      $(".navbar").css("width", window.innerWidth);
+    if (window.innerWidth <= 350) {
       $(".posterImage").attr("width",window.innerWidht);
       $(".carImage").attr("height","300");
 
