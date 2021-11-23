@@ -389,6 +389,9 @@ transform: scale(1.1);
     position: sticky;
     top: 0vh;
   }
+  .searchicon , .mid2345, .right2, .right23 svg{
+  visibility:visible;
+  }
   .searchicon{
     position: absolute;
     left: 20vh;
