@@ -10,6 +10,17 @@
   width: 100%;
 }
 
+.popover {
+
+  position: absolute;
+left: 60%;
+  top: 5vh;
+  visibility: hidden;
+  background-color: white;
+  width: 30vw;
+  padding: 2vh;
+
+}
 #section1{
   height: 100vh;
 }
@@ -425,7 +436,7 @@ transform: scale(1.1);
   .trending h2 div {
     margin: auto;
     height: 10vh;
-    width: 30vh;
+    width: 49vh;
 }
 
 .navbar{
