@@ -631,3 +631,30 @@ transform: scale(1.1);
 }
   
 }
+
+
+.images img:hover{
+  transform: scale(1.5);
+  transform-style: unset;
+  transition: all 0.7s;
+}
+
+@media screen and (max-width:380px){
+
+.mid2345 {
+  justify-content: center;
+  position: absolute;
+  visibility: visible;
+  left: 30%;
+  top: -2%;
+  width: 30%;
+  background-color: yellow;
+  height: 100%;
+}
+
+.mid2345 img{
+  width: 20vh;
+  height: 10vh;
+}
+
+}
