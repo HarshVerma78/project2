@@ -587,7 +587,7 @@ transform: scale(1.1);
   .mid2345{
     justify-content: center;
     position: absolute;
-    left: 25vh;
+    left: 25%;
     top: -3vh;
     visibility: hidden;
     width: 30%;
