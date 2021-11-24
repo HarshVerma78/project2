@@ -12,7 +12,7 @@
   <body>
 
 
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal  fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content text-center">
@@ -66,10 +66,12 @@
 
 
 
-<section class="section coupon  d-flex">
- <h5>WishList</h5><h5 class="mx-3 px-3">USD</h5><h5 data-bs-toggle="modal" data-bs-target="#staticBackdrop">Account </h5><svg class="my-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<section class="section coupon">
+  <div class="container  d-flex">
+ <a>WishList</a><a class="mx-3 px-3">USD</a><a data-bs-toggle="modal" data-bs-target="#staticBackdrop">Account </a><svg class="my-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
 </svg>
+</div>
 </section>
 <section class="section" id="section1">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -118,8 +120,8 @@
         <img src="//cdn.shopify.com/s/files/1/0271/9288/5345/files/demo-shop-logo-1544080375_jpg_large.png?v=1573884133" alt="Callisters Sectioned Shopify Theme" itemprop="logo" style="max-width: 100%;width: 262px;">
       </div>
       <div class="rcontent d-flex">
-        <div class="nimage my-2 text-center shadow-sm" id="cartimage">
-          <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
+        <div class="cart nimage my-2 text-center shadow-sm" id="cartimage">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
             <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
           </svg>
         </div>
@@ -134,11 +136,46 @@
     <nav class="navbar2 d-flex">
     
       <ul class="li d-flex">
-        <li>Christmas</li>
-        <li>Candles</li>
-        <li>Trees</li>
-        <li>Collections</li>
-        <li>Include Pages</li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Christmas</button>
+          <div class="dropdown-content">
+            <a href="#"><span>Link 1</span>&nbsp;&nbsp;<span>Link 1</span>&nbsp;&nbsp;<span>Link </span> </a>
+            <a href="#"><span>Link 1</span>&nbsp;&nbsp;<span>Link 1</span>&nbsp;&nbsp;<span>Link </span></a>
+            <a href="#"><span>Link 1</span>&nbsp;&nbsp;<span>Link 1</span>&nbsp;&nbsp;<span>Link </span></a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Candles</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Trees</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Collections</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Include Pages</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div></li>
         <li>About Us</li>
         <li>FAQs</li>
       </ul>
@@ -150,7 +187,8 @@
       </svg>
     </div>
     </nav>
-    <div class="nav34">
+    
+    <div class="nav34 py-2">
     <nav class="navbar3 d-flex my-3 ">
       <div class="burger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
       aria-controls="offcanvasExample">
@@ -203,15 +241,8 @@
   </div>
   <div class="popover"> Your Cart has 0 items</div>
     </nav>
-  </div>
-  </div>
-
-
-
-
-
-
-
+  </div> 
+ 
 </section>
 <section class="section  " id="section2">
   <div class="container2 ">
@@ -266,7 +297,7 @@
             
         <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -275,7 +306,7 @@
           <div class="col-lg-3 pc">
             <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -284,7 +315,7 @@
           <div class="col-lg-3 pc">
             <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -293,7 +324,7 @@
           <div class="col-lg-3 pc">
             <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -307,7 +338,7 @@
             
         <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -316,7 +347,7 @@
           <div class="col-lg-3 pc">
             <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -325,7 +356,7 @@
           <div class="col-lg-3 pc">
             <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -334,7 +365,7 @@
           <div class="col-lg-3 pc">
             <div class="pcard">
           <h1>Tailored Shirt</h1>
-        <img src="shirt.jpg" alt="shirt image" style="width:100%">
+        <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
         <p class="price">Rs. 1500</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
         <button>Add to Cart</button>
@@ -431,7 +462,9 @@
       
   <div class="pcard">
     <h1>Tailored Shirt</h1>
-  <img src="shirt.jpg" alt="shirt image" style="width:100%">
+  <div class="hide">hello harsh</div>
+  <img class="myDIV cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
+  
   <p class="price">Rs. 1500</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
   <button>Add to Cart</button>
@@ -440,7 +473,7 @@
     <div class="col-lg-3 pc">
       <div class="pcard">
     <h1>Tailored Shirt</h1>
-  <img src="shirt.jpg" alt="shirt image" style="width:100%">
+  <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
   <p class="price">Rs. 1500</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
   <button>Add to Cart</button>
@@ -449,7 +482,7 @@
     <div class="col-lg-3 pc">
       <div class="pcard">
     <h1>Tailored Shirt</h1>
-  <img src="shirt.jpg" alt="shirt image" style="width:100%">
+  <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
   <p class="price">Rs. 1500</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
   <button>Add to Cart</button>
@@ -458,7 +491,7 @@
     <div class="col-lg-3 pc">
       <div class="pcard">
     <h1>Tailored Shirt</h1>
-  <img src="shirt.jpg" alt="shirt image" style="width:100%">
+  <img class="cardImage" src="shirt.jpg" alt="shirt image" style="width:100%">
   <p class="price">Rs. 1500</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia.</p>
   <button>Add to Cart</button>
@@ -535,10 +568,7 @@
         $(".carImage").attr("height","300");
       }
 
-      if (window.innerWidth <=600) {
-        $(".pc").addClass("col-lg-12");
-        $(".pc").removeClass("col-lg-3");
-      }
+     
 
       $(".searchImage").hover(function(){
         $(this).css("background-color","red");
@@ -554,6 +584,14 @@
     }
 
     );
+
+    $(".cardImage").hover(function(){
+        $(this).attr("src","shirt2.jpg")
+    },function(){
+      $(this).attr("src","shirt.jpg")
+    })
+
+
 
 </script>
   
